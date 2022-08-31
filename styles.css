@@ -21,6 +21,30 @@ html{
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
+
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: #eee;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background:#192a56;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+.btn:hover{
+    background: #27ae60;
+    letter-spacing: .1rem;
+}
+
+
 header{
     position: fixed;
     top: 0;
@@ -77,9 +101,107 @@ header .icons a:hover{
     display: none;
  }
 
+#search-form{
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+}
+
+#search-form.active{
+    top: 0%;
+}
+
+
+
+#search-form #search-box{
+    border: none;
+    width: 50rem;
+    border-bottom: .1rem solid #fff;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+#search-form #search-box::placeholder{
+    color: #eee;
+    font-style: italic;
+}
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+#search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+#search-form label:hover{
+    color: #27ae60;
+
+}
+#search-form #close{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+}
+
+.home .home-slider .slider{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 9rem;
+}
+.home .home-slider .slider .content{
+    flex: 1 1 45rem;
+}
+.home .home-slider .slider .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slider .image img{
+    width: 100%;
+}
+.home .home-slider .slider .content span{
+    color: #27ae60;
+    font-size: 2.5rem;
+}
+.home .home-slider .slider .content h3{
+    color: #192a56;
+    font-size: 7rem;
+}
+.home .home-slider .slider .content p{
+    color: #666;
+    font-size: 2.2rem;
+    padding: 5rem 0;
+    line-height: 1.5;
+}
+.swiper-pagination-bullet-active{
+    background:#27ae60;
+}
+
+
+
+
+
+
  header .navbar.active{
     clip-path: polygon(1 0,100% 0,100% 100%,0% 100%);
  }
+
+
 
  /*Media Queries*/
  @media (max-width:991px){
@@ -117,6 +239,10 @@ header .icons a:hover{
             background: #eee;
 
     }
+    #search-form #search-box{
+        width:90%;
+        margin:0 1rem;
+     }
  }
  @media (max-width:991px){
 
