@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESTURANT APP</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -22,9 +27,9 @@
             <a href="#review">review</a>
             <a href="#order">order</a>
         </nav>
-    
+
         <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"   onclick="showHideInfo()"></i>
+            <i class="fas fa-bars" id="menu-bars" onclick="showHideInfo()"></i>
             <i class="fas fa-search" id="search-icon"></i>
             <a href="#" class="fas fa-heart"></a>
             <a href="#" class="fas fa-shopping-cart"></a>
@@ -33,6 +38,75 @@
 
     <!--Header section ends here-->
 
+    <!--Search form-->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Search here.... ">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!--Search form ends here-->
+    <!--Home section starts here-->
+    <section class="home" id="home">
+
+        <div class="swiper-container home-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slider">
+                    <div class="content">
+                        <span>Our delicious meals</span>
+                        <h3>Spicey noodles</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis maxime ducimus, nemo
+                            vel unde hic enim quas, alias mollitia
+                            blanditiis qui deserunt quae is</p>
+                        <a href="" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slider">
+                    <div class="content">
+                        <span>Our delicious meals</span>
+                        <h3>Fried chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis maxime ducimus, nemo
+                            vel unde hic enim quas, alias mollitia
+                            blanditiis qui deserunt quae is</p>
+                        <a href="" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slider">
+                    <div class="content">
+                        <span>Our delicious meals</span>
+                        <h3>Steamy Pizzas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis maxime ducimus, nemo
+                            vel unde hic enim quas, alias mollitia
+                            blanditiis qui deserunt quae is</p>
+                        <a href="" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!--Home section ends here-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 
